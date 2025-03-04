@@ -67,10 +67,12 @@ header li:last-child{
     margin-right: 0;
 }
 
-@media(max-width: 700px){
+@media(max-width: 768px){
 
-    header li a{
+    header li{
         font-size: 12px;
+        display: inline-block;
+        margin: 0 7px;
     }
     header{
         flex-direction: column;
@@ -123,16 +125,20 @@ header li:last-child{
     font-weight: bold;
 }
 
-@media(max-width: 700px){
+@media(max-width: 768px){
 
     #inicio h1{
-        font-size: 2rem;
+        font-size: 38px;
     }
     #inicio h3{
-        font-size: 1rem;
+        font-size: 20px;
     }
     #inicio p{
-        font-size: 0.5rem;
+        font-size: 13px;
+        width: 90%;
+    }
+    #inicio .btn{
+        padding: 10px 20px;
     }
 }
 
@@ -187,7 +193,7 @@ header li:last-child{
     flex-basis: 60%;
 }
 
-@media(max-width: 700px){
+@media(max-width: 768px){
 
     #conhe .grid li.small, #conhe .grid li.large{
         flex-basis: 100%;
@@ -321,11 +327,12 @@ img{
     font-weight: bold;
 }
 
-@media (max-width: 700px){
+@media (max-width: 768px){
 
     #contacto input{
         flex-basis: 100%;
         margin-bottom: 15px;
+        font-size: 11px;
     }
 }
 
@@ -367,4 +374,10 @@ footer a{
     color: #c3c63b;
     font-weight: bold;
     text-transform: uppercase;
+}
+
+@media screen and (max-width: 768px) {
+    footer p{
+        font-size: 12px;
+    } 
 }
